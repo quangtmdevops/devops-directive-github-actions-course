@@ -23,6 +23,7 @@ jobs:
       - name: Inspect values inside producer
         run: |
           echo "FOO (set via GITHUB_ENV):   $FOO"
+          echo "foo (set via GITHUB_ENV):   $foo"
           echo "foo (step output):          ${{ steps.generate-foo.outputs.foo }}"
 
   consumer:
